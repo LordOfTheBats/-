@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <style>
+        header {background: black; display: flex;align-items: flex-end;padding: 10px 20px;height: 80px;box-shadow: 0 2px 5px rgba(0,0,0,0.2);}
+        header img {height: 50px;margin-right: 15px;margin-bottom: 5px;}
+        header p {font-family: "Arial";font-size: 20px;margin-bottom: 5px;}
+        nav {background: #f0f0f0;padding: 10px 20px;display: flex;justify-content: space-around;box-shadow: 0 2px 3px rgba(0,0,0,0.1);border: 1px solid gray}
+        nav a {font-family: "Arial";font-size: 18px;color: black;text-decoration: none;padding: 5px 10px;}
+        nav a:hover {color: #0066cc;}
+        main {padding: 20px;}
+        main h1 {font-size: 40px;background-color:black; color: rgb(180, 0, 0);text-align: center;font-family: "Arial";}
+        footer {background-color: black;padding: 10px;}
+        footer p {background-color: white;padding: 5px;font-family: "Arial";font-size: 20px;}
+        form {font-family: "Arial";}
+        button {font-family: "Arial";border: 2px solid blue;font-size: 15px;color: blue;width: 90px;height: 40px;}
+        .box {background-color: black;border-radius: 15px;display: block;width: calc(100% - 40px);margin: 20px 0;font-family: Arial;font-size: 25px;line-height: 1.5;text-align: left;box-sizing: border-box;color: rgb(180, 0, 0);}
+        .section h1 {font-family: "Arial";color: rgb(180, 0, 0);}
+        .section p {font-family: "Arial";}
+        .section img {border-radius: 15px; border: 1px solid rgb(180, 0, 0);}
+        .back-to-top {margin-top: 10px;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="https://avatars.mds.yandex.net/i?id=ba45f602f81f9ad2640ff2ef0cdb10373a83375a-5151195-images-thumbs&n=13" alt="Логотип">
+            <p><b style="color:rgb(180, 0, 0);">Внимание! Сезонные скидки 40%</b> <a href="#1">Подробнее</a></p>
+        </header>
+        <nav>
+            <a style="color: rgb(180, 0, 0);" href="#2">Продукция</a>
+            <a style="color: rgb(180, 0, 0);" href="#3">Как купить?</a>
+            <a style="color: rgb(180, 0, 0);" href="#4">Оптом</a>
+            <a style="color: rgb(180, 0, 0);" href="#5">О компании</a>
+        </nav>
+        <main>
+            <h1>Fantastic Party</h1>
+
+            <div style="display: flex; flex-direction: column; align-items: center; font-family: Arial; font-size: 20px; margin: 20px auto; max-width: 800px;">
+                <form style="display: flex; align-items: center; gap: 10px;">
+                    <label for="city" style="margin:50;">Города в которые мы доставляем: </label>
+                    <select id="city" name="city" style="padding: 5px; font-family: Arial; font-size: 16px;">
+                        <option value="1 city">Москва</option>
+                        <option value="2 city">Санкт-Петербург</option>
+                        <option value="3 city">Казань</option>
+                        <option value="4 city">Новосибирск</option>
+                        <option value="5 city">Екатеринбург</option>
+                    </select>
+                </form>
+            </div>
+
+            <section id="2">
+                <div class="box">
+                    <img src="https://avatars.mds.yandex.net/i?id=46bd9c9ce5d9ecd6e1bb6a692762c61ba4da7cb8-5538118-images-thumbs&n=13" width="100">
+                    <p style="color: rgb(180, 0, 0);">Хлопушки</p>
+                </div>
+
+                <div class="box">
+                    <img src="https://46f32a42-e4ff-489b-8e03-b52e4d70fd18.selcdn.net/i/webp/55/c24c9cd6fe39f0f273f0fc30c5fd01.webp" width="100">
+                    <p style="color: rgb(180, 0, 0);">Петарды</p>
+                </div>
+                
+                <div class="box">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIdro_lZGQCAO3Cl43x8_-J4j6MPLOe3d2HXL6jSEcD-j59r0Q=s900-c-k-c0x00ffffff-no-rj" width="100">
+                    <p style="color: rgb(180, 0, 0);">Фонтаны</p>
+                </div>
+
+                <div class="box">
+                    <img src="https://avatars.mds.yandex.net/i?id=b48404a2634116cd776e36d23367ea83bd64e59c-5241728-images-thumbs&n=13" width="100">
+                    <p style="color: rgb(180, 0, 0);">Фестивальные шары</p>
+                </div>
+            </section>
+
+            <section id="1" class="section">
+                <h1>Сезонное предложение</h1>
+                <p>С 5 декабря по 5 марта действует предложение: скидка на всю продукцию 40%.</p>
+                <p><b><i>Спешите купить праздник выгодно?</i></b></p>
+                <img src="https://avatars.mds.yandex.net/i?id=66a0f48d60f338aa3a127d3429d52840_l-4866844-images-thumbs&n=13" width="500">
+            </section>
+
+            <section id="3" class="section">
+                <h1>Как приобрести?</h1>
+                <button onclick="document.querySelector('footer').scrollIntoView({behavior: 'smooth'})">Контакты</button>
+                <p>Вы можете сделать заказ по телефону или приобрести товары в магазине.</p>
+                <p>В магазине вас ждёт подробный рассказ о нашей продукции.</p>
+                <p>При посещении магазина можно заказать доставку на дом/в офис.</p>
+                <p>Вы также можете по телефону сделать предзаказ для резервирования товаров в магазине.</p>
+            </section>
+
+            <section id="4" class="section">
+                <h1>Оптом</h1>
+                <p>От 100 000₽ - скидка 45%</p>
+                <p>От 200 000₽ - скидка 50%</p>
+                <img src="https://avatars.mds.yandex.net/i?id=cb36c1036bd382c3025b09938b04da2ad9a7f423-4560311-images-thumbs&n=13" width="150">
+            </section>
+
+            <section id="5" class="section">
+                <h1>О компании</h1>
+                <p>Наша история началась с магазина, открывшегося в 2005 году. Тогда мы предлагали только хлопушки.</p>
+                <p>В 2015 году у нас появился сайт, а ассортимент пополнился новыми видами товаров.</p>
+                <img src="https://m.media-amazon.com/images/S/abs-image-upload-na/5/AmazonStores/ATVPDKIKX0DER/ccb63b41e1fca779887a1195ef34b023.w1000.h324._CR174%2C0%2C648%2C324_SX1500_.jpg" width="150">
+                <p></p>
+                <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Наверх</button>
+            </section>
+        </main>
+
+        <footer>
+            <p><b>Контакты</b></p>
+            <p>Адрес: Г. Звездный, пр-кт, Экспрериментальный, 21</p>
+            <p>Тел.: 2502-3716</p>
+        </footer>
+    </body>
+</html>
